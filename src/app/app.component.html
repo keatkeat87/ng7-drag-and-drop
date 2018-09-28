@@ -1,0 +1,14 @@
+ 
+
+<!-- <div style="width : 500px; height: 500px; border: 1px solid red" cdkDrag ></div> -->
+
+
+
+ 
+<cdk-drop (dropped)="drop($event)">
+  <div *ngFor="let name of names" cdkDrag>{{ name }}</div>
+</cdk-drop>
+
+ 
+
+<router-outlet></router-outlet>
